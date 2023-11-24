@@ -1,11 +1,10 @@
-import { Box } from "@kuma-ui/core";
-
+import WrapBox from "@/components/Box";
 export default function Home() {
   return (
     <main>
-      <Box p={8} bg="blue" color="white">
+      <WrapBox bg="blue" color="white">
         Hello world
-      </Box>
+      </WrapBox>
     </main>
   );
 }
