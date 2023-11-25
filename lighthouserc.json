@@ -8,11 +8,8 @@
         "maxWaitForLoad": 90000
       }
     },
-    "assert": {},
     "upload": {
       "target": "temporary-public-storage"
-    },
-    "server": {},
-    "wizard": {}
+    }
   }
 }
