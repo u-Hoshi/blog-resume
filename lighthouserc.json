@@ -1,7 +1,7 @@
 {
   "ci": {
     "collect": {
-      "staticDistDir": "./",
+      "staticDistDir": "/",
       "url": "http://localhost:3000/",
       "settings": {
         "maxWaitForLoad": 90000
