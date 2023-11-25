@@ -1,0 +1,15 @@
+{
+  "ci": {
+    "collect": {
+      "staticDistDir": "./",
+      "url": ["http://localhost:3000/"],
+      "settings": {
+        "maxWaitForLoad": 90000
+      }
+    },
+    "assert": {},
+    "upload": {},
+    "server": {},
+    "wizard": {}
+  }
+}
