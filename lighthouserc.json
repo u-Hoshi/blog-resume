@@ -1,7 +1,9 @@
 {
   "ci": {
     "collect": {
-      "staticDistDir": "./",
+      "numberOfRuns": 1,
+      "startServerCommand": "yarn start",
+      "url": ["http://localhost:3000/"],
       "settings": {
         "maxWaitForLoad": 90000
       }
