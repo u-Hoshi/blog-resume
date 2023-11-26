@@ -19,6 +19,7 @@
     "storybook": "^7.5.3"
   },
   "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.7.4",
     "@kuma-ui/next-plugin": "^1.1.13",
     "@storybook/addon-essentials": "^7.5.3",
     "@storybook/addon-interactions": "^7.5.3",
