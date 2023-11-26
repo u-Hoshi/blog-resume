@@ -1458,47 +1458,47 @@
   resolved "https://registry.yarnpkg.com/@juggle/resize-observer/-/resize-observer-3.4.0.tgz#08d6c5e20cf7e4cc02fd181c4b0c225cd31dbb60"
   integrity sha512-dfLbk+PwWvFzSxwk3n5ySL0hfBog779o8h68wK/7/APo/7cgyWp5jcXockbxdk5kFRkbeXWm4Fbi9FrdN381sA==
 
-"@kuma-ui/babel-plugin@^1.1.12":
-  version "1.1.12"
-  resolved "https://registry.yarnpkg.com/@kuma-ui/babel-plugin/-/babel-plugin-1.1.12.tgz#516ed9eba6df64a362e3357eff79eb59cffee8ba"
-  integrity sha512-sDmYUuRmKhW5OmPHmiGEeJUzAOWFxR7h/r165JSGSqPIJudgRNWapOugrq9NNz/lBsJf0ZmC2A6pJh+WgPh9hg==
+"@kuma-ui/babel-plugin@^1.1.13":
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/@kuma-ui/babel-plugin/-/babel-plugin-1.1.13.tgz#c07f1e6f88e926d272f429fc54a223680b429520"
+  integrity sha512-S/Y+C7F0AsMVYH45hvUHvHNdARTgMtgidNvJjc3rOy1zLfk16m37/niZQuKY3+wzYL3eJYh2C8ahA5E/X6dGcw==
   dependencies:
     "@babel/core" "^7.21.4"
-    "@kuma-ui/compiler" "^1.2.3"
-    "@kuma-ui/core" "^1.5.3"
+    "@kuma-ui/compiler" "^1.2.4"
+    "@kuma-ui/core" "^1.5.4"
     "@kuma-ui/sheet" "^1.3.0"
-    "@kuma-ui/system" "^1.7.0"
+    "@kuma-ui/system" "^1.7.1"
 
-"@kuma-ui/compiler@^1.2.3":
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/@kuma-ui/compiler/-/compiler-1.2.3.tgz#45813f0eb26049ede191a608c0e91a78b1e7c9fe"
-  integrity sha512-KxjlRPYZ4C2i7MdM40zvuKSKDHWU4JLGf7yg1uQumjLra8K7oCTjSNdHQGcECwxY22h8y+werE01IWbEku4P/A==
+"@kuma-ui/compiler@^1.2.4":
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/@kuma-ui/compiler/-/compiler-1.2.4.tgz#82d1d7af9e8844fcc3c705a8a1274ce87cf7302e"
+  integrity sha512-SEhDVd1VgzeeKcqiNwAQK3AyjwhgjVKPrcD+yoR2R5E0VHAHGKbsIuL/0A2PlhxC+VtOzN663PSWRCLfRbzIfw==
   dependencies:
-    "@kuma-ui/core" "^1.5.3"
+    "@kuma-ui/core" "^1.5.4"
     "@kuma-ui/sheet" "^1.3.0"
-    "@kuma-ui/system" "^1.7.0"
+    "@kuma-ui/system" "^1.7.1"
     ts-morph "^19.0.0"
 
-"@kuma-ui/core@^1.5.3":
-  version "1.5.3"
-  resolved "https://registry.yarnpkg.com/@kuma-ui/core/-/core-1.5.3.tgz#07114da8fcbf416bbaba721edb9f76f58e00dc94"
-  integrity sha512-TfLnJkJqv9SKAoKtJbudTbXXrVAv1M7kJ7hYdGRea7lGkiVttdYI5PDtwLnHOVaQuSxAHi1BzWiZVGgYdaKwVQ==
+"@kuma-ui/core@^1.5.3", "@kuma-ui/core@^1.5.4":
+  version "1.5.4"
+  resolved "https://registry.yarnpkg.com/@kuma-ui/core/-/core-1.5.4.tgz#ee85aad43ce53f99ea361c0170d1053345ea76ef"
+  integrity sha512-9UWFr9+g99NvZZqXfKC2kcHGx8sLYIhaW8dVROz8R+ZO/e0LCnqrgHII0ITE4fLz7bMhZg/B9Kw28fKywYSkOQ==
   dependencies:
     "@kuma-ui/sheet" "1.3.0"
-    "@kuma-ui/system" "1.7.0"
+    "@kuma-ui/system" "1.7.1"
     "@types/stylis" "^4.2.0"
     stylis "^4.2.0"
 
 "@kuma-ui/next-plugin@^1.1.13":
-  version "1.1.13"
-  resolved "https://registry.yarnpkg.com/@kuma-ui/next-plugin/-/next-plugin-1.1.13.tgz#85e891d189cae26109037d58e2a7e5f011db9896"
-  integrity sha512-69lP8tuF7+741F5TG2gCBRkOjDV24B6LVjHXNW7uOpX34gDiWN4LWk20eCWvTGiL0KqJAWumDWBuxGWq7OjMRw==
+  version "1.1.14"
+  resolved "https://registry.yarnpkg.com/@kuma-ui/next-plugin/-/next-plugin-1.1.14.tgz#b71014b976cb8e2a6db5ff2774d551a9dfa3f85e"
+  integrity sha512-QIzxHrTg1D3I6/kt2CYLhoo8pb5YGUpjcxvPKFttXCs4r01sQpcxdJ8o+cvXF7C8kg7MKVH77DhGgewtwPc83A==
   dependencies:
     "@babel/preset-env" "^7.21.4"
     "@babel/preset-react" "^7.18.6"
     "@babel/preset-typescript" "^7.21.4"
-    "@kuma-ui/core" "^1.5.3"
-    "@kuma-ui/webpack-plugin" "^1.2.5"
+    "@kuma-ui/core" "^1.5.4"
+    "@kuma-ui/webpack-plugin" "^1.2.6"
     babel-loader "^9.1.2"
     browserslist "4.21.5"
 
@@ -1509,22 +1509,22 @@
   dependencies:
     stylis "^4.2.0"
 
-"@kuma-ui/system@1.7.0", "@kuma-ui/system@^1.7.0":
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/@kuma-ui/system/-/system-1.7.0.tgz#122ef9eef5be52bc438326656322ef6ff51ffe51"
-  integrity sha512-aGViCAuDet86wN9oKKc9mK3BfBCERBIj83KOoKsooKMYTtBIKn1JRCPMnVXDUlHT88Q6zuu1uMmp+vxyIFlliA==
+"@kuma-ui/system@1.7.1", "@kuma-ui/system@^1.7.1":
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/@kuma-ui/system/-/system-1.7.1.tgz#c24724170c51caef6bec86c1447617ba580ec339"
+  integrity sha512-ZuZRrXP+d7onFA5fnc+cbFx4V9HHlUxeaiO8GZLgqxKCWbYTuzzOSYGg2ZaBTwrOy9sdGFeki8YnmcMzwv+V1g==
   dependencies:
     "@kuma-ui/sheet" "1.3.0"
     csstype "^3.1.2"
 
-"@kuma-ui/webpack-plugin@^1.2.5":
-  version "1.2.5"
-  resolved "https://registry.yarnpkg.com/@kuma-ui/webpack-plugin/-/webpack-plugin-1.2.5.tgz#9f7ab1d39b09c2d7caa68c30fd8810f4d2fdee1d"
-  integrity sha512-plFf+IxcC7IDFHbKErGsrwCuTaUZ9Y04gKkkMeluzTnemgBePM89a0K8o9zdZ5bMVO2cgvRU6xZIieiGS+Yn2w==
+"@kuma-ui/webpack-plugin@^1.2.6":
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/@kuma-ui/webpack-plugin/-/webpack-plugin-1.2.6.tgz#da4177a4dc18cedff2c5a5425fd9339d60ab60f9"
+  integrity sha512-WFAXjbuF4FTJ8qfzTp8om0K6FsmnAgE9RpS5zSkzRzGMHMTwLxSV5Csrr45OeNQDGtiF4AkddRyJtFmHLhpgew==
   dependencies:
-    "@kuma-ui/babel-plugin" "^1.1.12"
+    "@kuma-ui/babel-plugin" "^1.1.13"
     "@kuma-ui/sheet" "^1.3.0"
-    "@kuma-ui/system" "^1.7.0"
+    "@kuma-ui/system" "^1.7.1"
     esbuild "^0.18.0"
     eval "^0.1.8"
 
@@ -4075,9 +4075,9 @@ cli-cursor@^3.1.0:
     restore-cursor "^3.1.0"
 
 cli-spinners@^2.5.0:
-  version "2.9.1"
-  resolved "https://registry.yarnpkg.com/cli-spinners/-/cli-spinners-2.9.1.tgz#9c0b9dad69a6d47cbb4333c14319b060ed395a35"
-  integrity sha512-jHgecW0pxkonBJdrKsqxgRX9AcG+u/5k0Q7WPDfi8AogLAdwxEkyYYNWwZ5GvVFoFx2uiY1eNcSK00fh+1+FyQ==
+  version "2.9.2"
+  resolved "https://registry.yarnpkg.com/cli-spinners/-/cli-spinners-2.9.2.tgz#1773a8f4b9c4d6ac31563df53b3fc1d79462fe41"
+  integrity sha512-ywqV+5MmyL4E7ybXgKys4DugZbX0FC6LnwrhjuykIjnK9k8OQacQ7axGKnjDXWNhns0xot3bZI5h55H8yo9cJg==
 
 cli-table3@^0.6.1:
   version "0.6.3"
@@ -4683,9 +4683,9 @@ ejs@^3.1.8:
     jake "^10.8.5"
 
 electron-to-chromium@^1.4.284, electron-to-chromium@^1.4.535:
-  version "1.4.593"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.593.tgz#f71b157f7382f3d3a164f73ff2da772d4b3fd984"
-  integrity sha512-c7+Hhj87zWmdpmjDONbvNKNo24tvmD4mjal1+qqTYTrlF0/sNpAcDlU0Ki84ftA/5yj3BF2QhSGEC0Rky6larg==
+  version "1.4.594"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.594.tgz#f69f207fba80735a44a988df42f3f439115d0515"
+  integrity sha512-xT1HVAu5xFn7bDfkjGQi9dNpMqGchUkebwf1GL7cZN32NSwwlHRPMSDJ1KN6HkS0bWUtndbSQZqvpQftKG2uFQ==
 
 elliptic@^6.5.3, elliptic@^6.5.4:
   version "6.5.4"
@@ -8927,7 +8927,6 @@ workerd@1.20231030.0:
     "@cloudflare/workerd-windows-64" "1.20231030.0"
 
 "wrap-ansi-cjs@npm:wrap-ansi@^7.0.0", wrap-ansi@^7.0.0:
-  name wrap-ansi-cjs
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
   integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
