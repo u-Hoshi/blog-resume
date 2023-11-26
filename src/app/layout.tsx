@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { KumaRegistry } from "@kuma-ui/next-plugin/registry";
+export const runtime = "edge";
 import "./reset.css";
 
 export const metadata: Metadata = {

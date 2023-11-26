@@ -1,4 +1,5 @@
 import { Box } from "@kuma-ui/core";
+export const runtime = "edge";
 
 type WrapBoxProps = {
   bg: string;
