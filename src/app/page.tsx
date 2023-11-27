@@ -27,7 +27,7 @@ export default function Home() {
     <div style={{ margin: "0 auto", textAlign: "center" }}>
       <Box display="flex" justify="center">
         <Image
-          src="uhoshi-icon.png"
+          src="uhoshi-icon.webp"
           alt="uHoshi icon"
           style={{ width: "300px", height: "300px" }}
         />
