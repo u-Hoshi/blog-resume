@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { KumaRegistry } from "@kuma-ui/next-plugin/registry";
 export const runtime = "edge";
 import "./reset.css";
+import Header from "@/components/Header";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,8 +16,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body>
-        <KumaRegistry>{children}</KumaRegistry>
+      <body style={{ backgroundColor: "#ECF4D6" }}>
+        <KumaRegistry>
+          <Header />
+          {children}
+        </KumaRegistry>
       </body>
     </html>
   );
