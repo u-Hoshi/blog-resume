@@ -1,16 +1,13 @@
-import Header from "@/components/Header";
-import {
-  Box,
-  Button,
-  Grid,
-  Heading,
-  Image,
-  Link,
-  Text,
-  styled,
-} from "@kuma-ui/core";
+import { Box, Grid, Heading, Image, Link, Text, styled } from "@kuma-ui/core";
 export const runtime = "edge";
-import { SiGithub, SiQiita, SiTwitter, SiZenn } from "react-icons/si";
+import {
+  SiGithub,
+  SiQiita,
+  SiStorybook,
+  SiTwitter,
+  SiZenn,
+} from "react-icons/si";
+import { FaBook } from "react-icons/fa";
 
 const StyledButton = styled.button`
   border-radius: 4px;
@@ -51,6 +48,11 @@ const links = [
   },
   { href: "https://zenn.dev/toaruenginner", icon: <SiZenn />, label: "Zenn" },
   { href: "https://qiita.com/u_Hoshi", icon: <SiQiita />, label: "Qiita" },
+  {
+    href: "https://booklog.jp/users/7ef1accb65c94bb7",
+    icon: <FaBook />,
+    label: "Book",
+  },
 ];
 export default function Home() {
   return (
@@ -68,6 +70,7 @@ export default function Home() {
       <Text color="#265073" fontSize="16px">
         Web Developer
       </Text>
+      <SiStorybook />
       <Heading as="h3" color="#265073" fontSize="24px">
         Links
       </Heading>
@@ -85,6 +88,7 @@ export default function Home() {
             href={href}
             aria-label={label}
             style={{ color: "#265073", fontSize: "40px" }}
+            target="_blank"
           >
             <StyledButton>{icon}</StyledButton>
           </Link>
