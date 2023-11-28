@@ -12,6 +12,36 @@ import {
 export const runtime = "edge";
 import { SiGithub, SiQiita, SiTwitter, SiZenn } from "react-icons/si";
 
+const StyledButton = styled.button`
+  border-radius: 4px;
+  position: relative;
+  display: inline-block;
+  width: 64px;
+  height: 56px;
+  font-size: 30px;
+  color: #265073;
+  transition: 0.5s;
+  text-decoration: none;
+  box-shadow: 0 1px 2px #265073;
+  background: #ecf4d6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 2px #265073;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px #2d9596;
+  }
+
+  &:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px #2d9596;
+  }
+`;
+
 const links = [
   { href: "https://github.com/u-Hoshi", icon: <SiGithub />, label: "GitHub" },
   {
@@ -35,14 +65,19 @@ export default function Home() {
       <Text color="#265073" fontSize="32px" fontWeight="bold">
         u-Hoshi
       </Text>
+      <Text color="#265073" fontSize="16px">
+        Web Developer
+      </Text>
       <Heading as="h3" color="#265073" fontSize="24px">
         Links
       </Heading>
       <Grid
         gridTemplateColumns="repeat(2, 1fr)"
-        gap={6}
+        gap={16}
         width={"240px"}
         margin={"0 auto"}
+        paddingBottom={64}
+        placeItems={"center"}
       >
         {links.map(({ href, icon, label }) => (
           <Link
@@ -51,7 +86,7 @@ export default function Home() {
             aria-label={label}
             style={{ color: "#265073", fontSize: "40px" }}
           >
-            {icon}
+            <StyledButton>{icon}</StyledButton>
           </Link>
         ))}
       </Grid>
