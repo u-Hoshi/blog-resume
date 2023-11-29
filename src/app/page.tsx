@@ -4,6 +4,7 @@ import {
   SiGithub,
   SiQiita,
   SiStorybook,
+  SiSpeakerdeck,
   SiTwitter,
   SiZenn,
 } from "react-icons/si";
@@ -15,7 +16,7 @@ const StyledButton = styled.button`
   display: inline-block;
   width: 64px;
   height: 56px;
-  font-size: 30px;
+  font-size: 2rem;
   color: #265073;
   transition: 0.5s;
   text-decoration: none;
@@ -24,6 +25,7 @@ const StyledButton = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 2px solid #265073;
 
   transition: all 0.3s ease;
   box-shadow: 0 1px 2px #265073;
@@ -53,6 +55,11 @@ const links = [
     icon: <FaBook />,
     label: "Book",
   },
+  {
+    href: "https://speakerdeck.com/u_hoshi",
+    icon: <SiSpeakerdeck />,
+    label: "SpeakerDeck",
+  },
 ];
 export default function Home() {
   return (
@@ -75,7 +82,7 @@ export default function Home() {
         Links
       </Heading>
       <Grid
-        gridTemplateColumns="repeat(2, 1fr)"
+        gridTemplateColumns="repeat(3, 1fr)"
         gap={16}
         width={"240px"}
         margin={"0 auto"}
@@ -83,13 +90,7 @@ export default function Home() {
         placeItems={"center"}
       >
         {links.map(({ href, icon, label }) => (
-          <Link
-            key={href}
-            href={href}
-            aria-label={label}
-            style={{ color: "#265073", fontSize: "40px" }}
-            target="_blank"
-          >
+          <Link key={href} href={href} aria-label={label} target="_blank">
             <StyledButton>{icon}</StyledButton>
           </Link>
         ))}
