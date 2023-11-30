@@ -26,6 +26,7 @@ const StyledButton = styled.button`
   align-items: center;
   justify-content: center;
   border: 2px solid #265073;
+  padding: 0;
 
   transition: all 0.3s ease;
   box-shadow: 0 1px 2px #265073;
