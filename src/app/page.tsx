@@ -16,7 +16,7 @@ const StyledButton = styled.button`
   display: inline-block;
   width: 64px;
   height: 56px;
-  font-size: 2rem;
+  font-size: 50px;
   color: #265073;
   transition: 0.5s;
   text-decoration: none;
@@ -29,11 +29,6 @@ const StyledButton = styled.button`
 
   transition: all 0.3s ease;
   box-shadow: 0 1px 2px #265073;
-
-  @media screen and (max-width: 560px) {
-    background: #ec14d6;
-    font-size: 200%;
-  }
 
   &:hover {
     transform: translateY(-3px);
@@ -83,6 +78,11 @@ export default function Home() {
         Web Developer
       </Text>
       <SiStorybook />
+
+      <StyledButton>
+        <SiStorybook />
+      </StyledButton>
+
       <Heading as="h3" color="#265073" fontSize="24px">
         Links
       </Heading>
