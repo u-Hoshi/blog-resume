@@ -16,7 +16,7 @@ const StyledButton = styled.button`
   display: inline-block;
   width: 64px;
   height: 56px;
-  font-size: 50px;
+  font-size: 32px;
   color: #265073;
   transition: 0.5s;
   text-decoration: none;
@@ -78,10 +78,6 @@ export default function Home() {
         Web Developer
       </Text>
       <SiStorybook />
-
-      <StyledButton>
-        <SiStorybook />
-      </StyledButton>
 
       <Heading as="h3" color="#265073" fontSize="24px">
         Links
