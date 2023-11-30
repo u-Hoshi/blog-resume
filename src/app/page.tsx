@@ -30,6 +30,11 @@ const StyledButton = styled.button`
   transition: all 0.3s ease;
   box-shadow: 0 1px 2px #265073;
 
+  @media screen and (max-width: 560px) {
+    background: #ec14d6;
+    font-size: 200%;
+  }
+
   &:hover {
     transform: translateY(-3px);
     box-shadow: 0 4px 8px #2d9596;
