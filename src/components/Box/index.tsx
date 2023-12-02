@@ -1,4 +1,5 @@
 import { Box } from "@kuma-ui/core";
+
 export const runtime = "edge";
 
 type WrapBoxProps = {
@@ -7,12 +8,10 @@ type WrapBoxProps = {
   children: React.ReactNode;
 };
 
-const WrapBox = (props: WrapBoxProps) => {
-  return (
+const WrapBox = (props: WrapBoxProps) => (
     <Box p={8} bg={props.bg} color={props.color}>
       {props.children}
     </Box>
   );
-};
 
 export default WrapBox;

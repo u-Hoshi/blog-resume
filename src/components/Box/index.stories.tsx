@@ -1,7 +1,8 @@
 import { Meta, StoryObj } from "@storybook/react";
 
-import CustomBox from "./index";
 import theme from "../../../kuma.config";
+
+import CustomBox from "./index";
 
 const meta: Meta<typeof CustomBox> = {
   component: CustomBox,

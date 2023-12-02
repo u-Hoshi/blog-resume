@@ -1,8 +1,10 @@
-import type { Metadata } from "next";
 import { KumaRegistry } from "@kuma-ui/next-plugin/registry";
-export const runtime = "edge";
+import type { Metadata } from "next";
+
 import "./reset.css";
 import Header from "@/components/Header";
+
+export const runtime = "edge";
 
 export const metadata: Metadata = {
   title: "Create Next App",

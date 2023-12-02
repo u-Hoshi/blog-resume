@@ -1,14 +1,15 @@
-import { Box, Grid, Heading, Image, Link, Text, styled } from "@kuma-ui/core";
-export const runtime = "edge";
+import { Box, Grid, Heading, Image, Link, styled, Text } from "@kuma-ui/core";
+import { FaBook } from "react-icons/fa";
 import {
   SiGithub,
   SiQiita,
-  SiStorybook,
   SiSpeakerdeck,
+  SiStorybook,
   SiTwitter,
   SiZenn,
 } from "react-icons/si";
-import { FaBook } from "react-icons/fa";
+
+export const runtime = "edge";
 
 const StyledButton = styled.button`
   border-radius: 4px;
@@ -86,10 +87,10 @@ export default function Home() {
       <Grid
         gridTemplateColumns="repeat(3, 1fr)"
         gap={16}
-        width={"240px"}
-        margin={"0 auto"}
+        width="240px"
+        margin="0 auto"
         paddingBottom={64}
-        placeItems={"center"}
+        placeItems="center"
       >
         {links.map(({ href, icon, label }) => (
           <Link key={href} href={href} aria-label={label} target="_blank">
@@ -97,7 +98,7 @@ export default function Home() {
           </Link>
         ))}
       </Grid>
-      <a href="https://www.buymeacoffee.com/uHoshi" target="_blank">
+      <a href="https://www.buymeacoffee.com/uHoshi" target="_blank" rel="noreferrer">
         <Image
           src="https://cdn.buymeacoffee.com/buttons/v2/default-green.png"
           alt="Buy Me A Coffee"

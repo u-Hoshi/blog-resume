@@ -1,10 +1,15 @@
-import { Box, Flex, styled } from "@kuma-ui/core";
-import { Link } from "@kuma-ui/core";
+import { Flex, Link, styled } from "@kuma-ui/core";
+import { FunctionComponent } from "react";
+import { FaBook, FaHome } from "react-icons/fa";
 import { ImAddressBook } from "react-icons/im";
-import { FaBook } from "react-icons/fa";
-import { FaHome } from "react-icons/fa";
 
 export const runtime = "edge";
+
+type LinkItem = {
+  href: string;
+  text: string;
+  Icon: FunctionComponent;
+};
 
 const HeaderList = styled.ul`
   list-style: none;
@@ -28,27 +33,25 @@ const linkStyles = {
   alignItems: "center",
 };
 
-const links = [
+const links: LinkItem[] = [
   { href: "/", text: "home", Icon: FaHome },
   { href: "/resume", text: "resume", Icon: ImAddressBook },
   { href: "/blog", text: "blog", Icon: FaBook },
 ];
 
-const Header = () => {
-  return (
-    <Flex justifyContent="center">
-      <HeaderList>
-        {links.map(({ href, text, Icon }) => (
-          <ListItem key={href}>
-            <Link style={linkStyles} href={href}>
-              {/* <Icon style={{ padding: "2px" }} /> */}
-              {text}
-            </Link>
-          </ListItem>
-        ))}
-      </HeaderList>
-    </Flex>
-  );
-};
+const Header = () => (
+  <Flex justifyContent="center">
+    <HeaderList>
+      {links.map(({ href, text }) => (
+        <ListItem key={href}>
+          <Link style={linkStyles} href={href}>
+            {/* <Icon style={{ padding: "2px" }} /> */}
+            {text}
+          </Link>
+        </ListItem>
+      ))}
+    </HeaderList>
+  </Flex>
+);
 
 export default Header;

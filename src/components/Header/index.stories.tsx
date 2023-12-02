@@ -1,7 +1,8 @@
 import { Meta, StoryObj } from "@storybook/react";
 
-import Header from "./index";
 import theme from "../../../kuma.config";
+
+import Header from "./index";
 
 const meta: Meta<typeof Header> = {
   component: Header,

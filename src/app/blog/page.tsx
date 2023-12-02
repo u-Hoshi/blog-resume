@@ -1,4 +1,5 @@
 import { Link } from "@kuma-ui/core";
+
 import { getList } from "../../../libs/microcms";
 
 export default async function StaticPage() {
@@ -13,13 +14,11 @@ export default async function StaticPage() {
     <div>
       <h1>{time}</h1>
       <ul>
-        {contents.map((post) => {
-          return (
+        {contents.map((post) => (
             <li key={post.id}>
               <Link href={`/blog/${post.id}`}>{post.title}</Link>
             </li>
-          );
-        })}
+          ))}
       </ul>
     </div>
   );
