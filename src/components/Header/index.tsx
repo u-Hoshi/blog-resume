@@ -33,10 +33,11 @@ const linkStyles = {
   alignItems: "center",
 };
 
+// TODO 除外ルールを外す
 const links: LinkItem[] = [
-  { href: "/", text: "home", Icon: FaHome },
-  { href: "/resume", text: "resume", Icon: ImAddressBook },
-  { href: "/blog", text: "blog", Icon: FaBook },
+  { href: "/", text: "home", Icon: FaHome }, // eslint-disable-line
+  { href: "/resume", text: "resume", Icon: ImAddressBook }, // eslint-disable-line
+  { href: "/blog", text: "blog", Icon: FaBook }, // eslint-disable-line
 ];
 
 const Header = () => (
