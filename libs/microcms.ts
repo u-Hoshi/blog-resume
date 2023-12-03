@@ -29,18 +29,26 @@ export const client = createClient({
 
 // ブログ一覧を取得
 export const getList = async (queries?: MicroCMSQueries) => {
-  const listData = await client.getList<Blog>({
-    endpoint: "blogs",
-    queries,
-  });
+  try {
+    const listData = await client.getList<Blog>({
+      endpoint: "blogs",
+      queries,
+    });
 
-  return listData;
+    return listData;
+  } catch (error) {
+    // エラーが発生した場合の処理をここに記述
+    console.error("Error fetching blog list:", error);
+
+    // エラー情報を含むレスポンスを返すか、エラーを上位の関数に伝播させる
+    throw error;
+  }
 };
 
 // ブログの詳細を取得
 export const getDetail = async (
   contentId: string,
-  queries?: MicroCMSQueries,
+  queries?: MicroCMSQueries
 ) => {
   const detailData = await client.getListDetail<Blog>({
     endpoint: "blogs",
