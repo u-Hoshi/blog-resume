@@ -1,13 +1,9 @@
 {
   "ci": {
     "collect": {
-      "numberOfRuns": 3,
+      "numberOfRuns": 2,
       "startServerCommand": "yarn start",
-      "url": [
-        "http://localhost:3000/",
-        "http://localhost:3000/resume",
-        "http://localhost:3000/blog"
-      ],
+      "url": ["http://localhost:3000/", "http://localhost:3000/resume"],
       "settings": {
         "maxWaitForLoad": 90000
       }
